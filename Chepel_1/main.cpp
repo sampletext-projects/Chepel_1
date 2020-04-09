@@ -33,7 +33,6 @@ int main()
 		case '/':
 			r = o1 / o2;
 			break;
-		default: ;
 		}
 		cout << r;
 		cout << "\nRepeat?: ";
