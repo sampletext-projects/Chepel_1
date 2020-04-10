@@ -4,6 +4,11 @@ using namespace std;
 
 int main()
 {
+	setlocale(LC_ALL, "Russian");
+
+	cout << "Автор: Чепель Егор Максимович\n";
+	cout << "Циклические алгоритмы\n";
+
 	double o1, o2;
 	double r;
 
@@ -12,13 +17,13 @@ int main()
 
 	do
 	{
-		cout << "First: ";
+		cout << "Введите первое число: : ";
 		cin >> o1;
-		cout << "Operation: ";
+		cout << "Операция: ";
 		cin >> op;
-		cout << "Second: ";
+		cout << "Введите второе число: ";
 		cin >> o2;
-		cout << "Result: ";
+		cout << "Результат: ";
 		switch (op)
 		{
 		case '+':
@@ -38,12 +43,15 @@ int main()
 			cout << r;
 			break;
 		default:
-			cout << "Unknown Operation" << endl;
+			cout << "Неподдерживаемая операция" << endl;
 			break;
 		}
-		cout << "\nRepeat?: ";
+		cout << "\nПовторить?: ";
 		cin >> k;
 	}
 	while (k == '1');
+
+	system("pause");
+
 	return 0;
 }
