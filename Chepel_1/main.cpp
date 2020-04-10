@@ -23,23 +23,27 @@ int main()
 		{
 		case '+':
 			r = o1 + o2;
+			cout << r;
 			break;
 		case '-':
 			r = o1 - o2;
+			cout << r;
 			break;
 		case '*':
 			r = o1 * o2;
+			cout << r;
 			break;
 		case '/':
 			r = o1 / o2;
+			cout << r;
+			break;
+		default:
+			cout << "Unknown Operation" << endl;
 			break;
 		}
-		cout << r;
 		cout << "\nRepeat?: ";
 		cin >> k;
 	}
 	while (k == '1');
-
-
 	return 0;
 }
